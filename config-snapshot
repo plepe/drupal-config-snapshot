@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "Create config snapshot"
+vendor/bin/drush config:export -y
+echo "Call git"
+cd config
+git add .
+git commit -a -m "snapshot"
