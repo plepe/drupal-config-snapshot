@@ -1,4 +1,7 @@
 #!/bin/sh
+DRUPAL_PATH=/home/pib/drupal
+cd $DRUPAL_PATH
+
 echo "Create config snapshot"
 vendor/bin/drush config:export -y
 echo "Call git"
